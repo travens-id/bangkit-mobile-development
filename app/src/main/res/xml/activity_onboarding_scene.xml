@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="1000">
+       <KeyFrameSet>
+       </KeyFrameSet>
+        <OnSwipe motion:dragDirection="dragLeft" />
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:layout_height="300dp"
+            android:layout_marginTop="80dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_width="300dp"
+            android:id="@+id/imgHero1"
+            motion:layout_constraintEnd_toStartOf="parent" />
+        <Constraint
+            android:layout_height="300dp"
+            android:layout_marginTop="80dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_width="300dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/imgHero2"
+            motion:layout_constraintEnd_toEndOf="parent" />
+    </ConstraintSet>
+    <ConstraintSet
+        android:id="@+id/menu3"
+        motion:deriveConstraintsFrom="@+id/end" >
+        <Constraint
+            android:layout_height="300dp"
+            android:layout_marginTop="80dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_width="300dp"
+            motion:layout_constraintEnd_toStartOf="parent"
+            android:id="@+id/imgHero2" />
+        <Constraint
+            android:layout_height="300dp"
+            android:layout_marginTop="80dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_width="300dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/imgHero3"
+            motion:layout_constraintEnd_toEndOf="parent" />
+        <Constraint
+            android:id="@+id/btnSkip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="50dp"
+            android:layout_marginStart="50dp"
+            motion:layout_constraintTop_toTopOf="@+id/btnNext"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:visibility="invisible" />
+        <Constraint
+            android:id="@+id/btnNext"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="50dp"
+            android:layout_marginEnd="50dp"
+            android:visibility="invisible" />
+        <Constraint
+            android:id="@+id/btnGetStarted"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:visibility="visible"
+            motion:layout_constraintTop_toBottomOf="@+id/descOnboard1"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="95dp" />
+    </ConstraintSet>
+    <Transition
+        motion:constraintSetStart="@+id/end"
+        motion:constraintSetEnd="@+id/menu3"
+        motion:autoTransition="none" >
+        <OnSwipe motion:dragDirection="dragLeft" />
+    </Transition>
+</MotionScene>

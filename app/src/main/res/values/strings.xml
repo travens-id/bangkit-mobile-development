@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">Travens</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="person_with_a_handphone">Person with a handphone</string>
+    <string name="desc_onboard_1">Buat sendiri rencana perjalananmu ke destinasi impian.</string>
+    <string name="plan_your_journey">Rencanakan Perjalananmu</string>
+    <string name="next">Next</string>
+    <string name="fixed_budget">Sesuaikan dengan anggaran</string>
+    <string name="desc_onboard_2">Kostumisasi rencana perjalananmu sesuai dengan kebutuhan dan anggaran.</string>
+    <string name="marketplace">Sebuah wadah Marketplace</string>
+    <string name="desc_onboard_3">Anda dapat menjual barang dan jasa di platform marketplace kami.</string>
+    <string name="home">Home</string>
+    <string name="skip">Lewati</string>
+    <string name="get_started">Get Started</string>
+    <string name="illustration_with_briefcase">illustration with briefcase</string>
+    <string name="logo_travens">Logo Travens</string>
 </resources>
