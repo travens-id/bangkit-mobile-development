@@ -5,7 +5,6 @@
     <string name="person_with_a_handphone">Person with a handphone</string>
     <string name="desc_onboard_1">Buat sendiri rencana perjalananmu ke destinasi impian.</string>
     <string name="plan_your_journey">Rencanakan Perjalananmu</string>
-    <string name="next">Next</string>
     <string name="fixed_budget">Sesuaikan dengan anggaran</string>
     <string name="desc_onboard_2">Kostumisasi rencana perjalananmu sesuai dengan kebutuhan dan anggaran.</string>
     <string name="marketplace">Sebuah wadah Marketplace</string>
@@ -15,4 +14,6 @@
     <string name="get_started">Get Started</string>
     <string name="illustration_with_briefcase">illustration with briefcase</string>
     <string name="logo_travens">Logo Travens</string>
+    <string name="lanjut">Lanjut</string>
+    <string name="mulai">Mulai</string>
 </resources>
