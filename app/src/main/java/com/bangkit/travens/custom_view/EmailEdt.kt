@@ -3,7 +3,6 @@ package com.bangkit.travens.custom_view
 
 import android.content.Context
 import android.graphics.drawable.Drawable
-import android.os.Build
 import android.text.Editable
 import android.text.InputType
 import android.text.TextWatcher
@@ -34,6 +33,7 @@ class EmailEdt : AppCompatEditText {
         compoundDrawablePadding = 16
 
         setHint(R.string.email)
+        setAutofillHints(AUTOFILL_HINT_EMAIL_ADDRESS)
         setDrawable(emailIconDrawable)
 
         addTextChangedListener(object : TextWatcher{

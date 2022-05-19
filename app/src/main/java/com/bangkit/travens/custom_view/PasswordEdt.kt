@@ -41,9 +41,7 @@ class PasswordEdt : AppCompatEditText {
         compoundDrawablePadding = 16
 
         setHint(R.string.password)
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            setAutofillHints(AUTOFILL_HINT_PASSWORD)
-        }
+        setAutofillHints(AUTOFILL_HINT_PASSWORD)
         setDrawable(passwordIconDrawable)
 
         addTextChangedListener(object : TextWatcher{
