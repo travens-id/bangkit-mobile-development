@@ -45,6 +45,48 @@
         app:layout_constraintStart_toStartOf="@+id/imgHero1"
         app:layout_constraintTop_toBottomOf="@+id/titleOnboard1" />
 
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/menu1"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="40dp"
+        app:altSrc="@drawable/ic_baseline_circle_24"
+        app:layout_constraintEnd_toStartOf="@+id/menu2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descOnboard1"
+        app:srcCompat="@drawable/ic_circle_24"
+        app:tint="@color/yellow" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/menu2"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        app:altSrc="@drawable/ic_baseline_circle_24"
+        app:layout_constraintBottom_toBottomOf="@+id/menu1"
+        app:layout_constraintEnd_toStartOf="@+id/menu3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/menu1"
+        app:layout_constraintTop_toTopOf="@+id/menu1"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_circle_24"
+        app:tint="@color/yellow" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/menu3"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginEnd="92dp"
+
+        app:altSrc="@drawable/ic_baseline_circle_24"
+        app:layout_constraintBottom_toBottomOf="@+id/menu2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/menu2"
+        app:layout_constraintTop_toTopOf="@+id/menu2"
+        app:srcCompat="@drawable/ic_circle_24"
+        app:tint="@color/yellow" />
+
 
     <ImageView
         android:id="@+id/imgHero2"
@@ -138,7 +180,7 @@
         android:layout_marginEnd="50dp"
         android:layout_marginBottom="50dp"
         android:background="@drawable/btn_background"
-        android:text="@string/next"
+        android:text="@string/lanjut"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="20sp"
@@ -151,12 +193,12 @@
         android:layout_height="50dp"
         android:layout_marginTop="95dp"
         android:background="@drawable/btn_background"
-        android:text="@string/get_started"
+        android:text="@string/mulai"
         android:textColor="@color/white"
         android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/descOnboard1" />
+        app:layout_constraintTop_toBottomOf="@+id/descOnboard3" />
 
 
 </androidx.constraintlayout.motion.widget.MotionLayout>
