@@ -9,6 +9,7 @@ import androidx.navigation.Navigation
 import com.bangkit.travens.R
 import com.bangkit.travens.databinding.FragmentLoginBinding
 
+@AndroidEntryPoint
 class LoginFragment : Fragment() {
 
 	private var _binding: FragmentLoginBinding? = null
