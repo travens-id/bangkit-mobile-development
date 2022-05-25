@@ -9,6 +9,12 @@ val Teal200 = Color(0xFF03DAC5)
 val White = Color(0xFFFFFFFF)
 
 val Primary = Color(0xFF2D8CFF)
+val Primary0 = Color(0xFFD5E8FF)
+val Primary20 = Color(0xFF96C5FF)
+val Primary40 = Color(0xFF509FFF)
+val Primary60 = Color(0xFF2675D4)
+val Primary80 = Color(0xFF174680)
+
 val Secondary = Color(0xFFFF8B00)
 val Third = Color(0xFF2B4361)
 val PrimaryText = Color(0xFF333333)
