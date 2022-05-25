@@ -11,8 +11,10 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import com.bangkit.travens.ui.theme.Primary60
 import com.bangkit.travens.R
 import com.bangkit.travens.ui.theme.ExtraLight
@@ -35,6 +37,8 @@ fun ProfileBanner() {
         ) {
             Text(
                 color = Color.White,
+                fontSize = 16.sp,
+                fontWeight = FontWeight.Bold,
                 text = "Hallo Akun Testing,\n" +
                     "Selamat datang di Travens"
             )
