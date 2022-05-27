@@ -27,4 +27,5 @@
     <string name="desc_register">Let\'s create account so you can travel with friends using travels</string>
     <string name="fullname">Fullname</string>
     <string name="already_have_an_account">Already have an account?</string>
+    <string name="err_invalid_email">Email tidak valid</string>
 </resources>
