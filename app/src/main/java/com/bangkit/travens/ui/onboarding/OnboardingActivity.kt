@@ -4,14 +4,11 @@ import android.content.Intent
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.view.WindowInsets
 import android.view.WindowManager
 import com.bangkit.travens.R
 import com.bangkit.travens.databinding.ActivityOnboardingBinding
-import com.bangkit.travens.ui.auth.AuthActivity
-import com.bangkit.travens.ui.login.LoginFragment
 
 class OnboardingActivity : AppCompatActivity(), View.OnClickListener {
 
@@ -45,8 +42,8 @@ class OnboardingActivity : AppCompatActivity(), View.OnClickListener {
 	override fun onClick(p0: View) {
 		when(p0.id){
 			R.id.btnGetStarted -> {
-				val moveIntent = Intent( this@OnboardingActivity, AuthActivity::class.java)
-				startActivity(moveIntent)
+//				val moveIntent = Intent( this@OnboardingActivity, AuthActivity::class.java)
+//				startActivity(moveIntent)
 			}
 		}
 	}
