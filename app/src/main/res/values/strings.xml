@@ -26,6 +26,17 @@
     <string name="let_s_create_an_account">Let\'s create an account</string>
     <string name="desc_register">Let\'s create account so you can travel with friends using travels</string>
     <string name="fullname">Fullname</string>
-    <string name="already_have_an_account">Already have an account?</string>
     <string name="err_invalid_email">Email tidak valid</string>
+    <string name="sudah_mempunyai_akun">Sudah mempunyai akun?</string>
+    <string name="masuk_dengan_email">Masuk dengan Email</string>
+    <string name="nikmati_perjalanan">Nikmati Perjalanan</string>
+    <string name="buat_disini">Buat Disini</string>
+    <string name="masuk">Masuk</string>
+    <string name="datar_dengan_email">Datar dengan Email</string>
+    <string name="mulai_perjalanan_baru">Mulai Perjalanan Baru</string>
+    <string name="nama">Nama</string>
+    <string name="firstname">Firstname</string>
+    <string name="lastname">Lastname</string>
+    <string name="no_telp">No Telp</string>
+    <string name="daftar">Daftar</string>
 </resources>
