@@ -6,6 +6,7 @@
         <entry key="..\:/Bangkit_2022/Capstone/bangkit-mobile-development/app/src/main/res/drawable/btn_background.xml" value="0.184" />
         <entry key="..\:/Bangkit_2022/Capstone/bangkit-mobile-development/app/src/main/res/drawable/ic_baseline_alternate_email_24.xml" value="0.1" />
         <entry key="..\:/Bangkit_2022/Capstone/bangkit-mobile-development/app/src/main/res/drawable/ic_baseline_circle_24.xml" value="0.184" />
+        <entry key="..\:/Bangkit_2022/Capstone/bangkit-mobile-development/app/src/main/res/drawable/ic_baseline_email_24.xml" value="0.184" />
         <entry key="..\:/Bangkit_2022/Capstone/bangkit-mobile-development/app/src/main/res/drawable/ic_baseline_lock_24.xml" value="0.184" />
         <entry key="..\:/Bangkit_2022/Capstone/bangkit-mobile-development/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.184" />
         <entry key="..\:/Bangkit_2022/Capstone/bangkit-mobile-development/app/src/main/res/drawable/ic_cart.xml" value="0.184" />
@@ -17,14 +18,13 @@
         <entry key="..\:/Bangkit_2022/Capstone/bangkit-mobile-development/app/src/main/res/drawable/ic_profile.xml" value="0.184" />
         <entry key="..\:/Bangkit_2022/Capstone/bangkit-mobile-development/app/src/main/res/drawable/illustration_register.xml" value="0.1695" />
         <entry key="..\:/Bangkit_2022/Capstone/bangkit-mobile-development/app/src/main/res/layout/activity_log_in.xml" value="0.17552083333333332" />
-        <entry key="..\:/Bangkit_2022/Capstone/bangkit-mobile-development/app/src/main/res/layout/activity_login.xml" value="0.14666666666666667" />
+        <entry key="..\:/Bangkit_2022/Capstone/bangkit-mobile-development/app/src/main/res/layout/activity_login.xml" value="0.16666666666666666" />
         <entry key="..\:/Bangkit_2022/Capstone/bangkit-mobile-development/app/src/main/res/layout/activity_main.xml" value="0.17552083333333332" />
-        <entry key="..\:/Bangkit_2022/Capstone/bangkit-mobile-development/app/src/main/res/layout/activity_onboarding.xml" value="0.1" />
-        <entry key="..\:/Bangkit_2022/Capstone/bangkit-mobile-development/app/src/main/res/layout/activity_sign_up.xml" value="0.16145833333333334" />
+        <entry key="..\:/Bangkit_2022/Capstone/bangkit-mobile-development/app/src/main/res/layout/activity_onboarding.xml" value="0.22" />
+        <entry key="..\:/Bangkit_2022/Capstone/bangkit-mobile-development/app/src/main/res/layout/activity_sign_up.xml" value="0.16666666666666666" />
         <entry key="..\:/Bangkit_2022/Capstone/bangkit-mobile-development/app/src/main/res/layout/activity_splash_screen.xml" value="0.17552083333333332" />
-        <entry key="..\:/Users/Public/AndroidStudioProjects/Travens/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.11" />
-        <entry key="..\:/Users/Public/AndroidStudioProjects/Travens/app/src/main/res/drawable/btn_background.xml" value="0.11" />
-        <entry key="..\:/Users/Public/AndroidStudioProjects/Travens/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.11" />     
+        <entry key="..\:/Bangkit_2022/Capstone/bangkit-mobile-development/app/src/main/res/layout/fragment_login.xml" value="0.17552083333333332" />
+        <entry key="..\:/Bangkit_2022/Capstone/bangkit-mobile-development/app/src/main/res/layout/fragment_register.xml" value="0.17552083333333332" />
       </map>
     </option>
   </component>

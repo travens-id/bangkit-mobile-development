@@ -42,6 +42,15 @@ class PasswordEditText : AppCompatEditText {
                     error = "Password must be at least 6 character long"
                     requestFocus()
                 }
+                else if(!s.toString().matches(".*[A-Z].*".toRegex())){
+                    error = "Must contain 1 Upper Case Character"
+                }
+                else if(!s.toString().matches(".*[a-z].*".toRegex())){
+                    error = "Must contain 1 Lower-Case Character"
+                }
+                else if(!s.toString().matches(".*[@\$%^&+=].*".toRegex())){
+                    error = "Must contain 1 Spesial Character (@\$%^&+=)"
+                }
             }
 
             override fun afterTextChanged(s: Editable?) {
