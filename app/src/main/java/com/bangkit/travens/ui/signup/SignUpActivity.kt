@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
-import com.bangkit.travens.R
 import com.bangkit.travens.databinding.ActivitySignUpBinding
 import com.bangkit.travens.ui.login.LoginActivity
 import com.google.firebase.auth.FirebaseAuth
@@ -35,9 +34,11 @@ class SignUpActivity : AppCompatActivity() {
 
 			if(email.isNotEmpty() && pass.isNotEmpty() && firstname.isNotEmpty() && lastname.isNotEmpty() && handphone.isNotEmpty()){
 				firebaseAuth.createUserWithEmailAndPassword(email, pass).addOnCompleteListener {
+					binding.rlLayout.visibility = View.VISIBLE
 					if(it.isSuccessful){
 						val intent = Intent(this, LoginActivity::class.java)
 						startActivity(intent)
+						Toast.makeText(this, "Akun telah berhasil dibuat", Toast.LENGTH_SHORT).show()
 					} else {
 						Toast.makeText(this, it.exception.toString(), Toast.LENGTH_SHORT).show()
 					}

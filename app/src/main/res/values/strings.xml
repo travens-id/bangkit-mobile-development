@@ -1,4 +1,4 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources >
     <string name="app_name">Travens</string>
     <string name="person_with_a_handphone">Person with a handphone</string>
     <string name="desc_onboard_1">Buat sendiri rencana perjalananmu ke destinasi impian.</string>
@@ -7,25 +7,14 @@
     <string name="desc_onboard_2">Kostumisasi rencana perjalananmu sesuai dengan kebutuhan dan anggaran.</string>
     <string name="marketplace">Sebuah wadah Marketplace</string>
     <string name="desc_onboard_3">Anda dapat menjual barang dan jasa di platform marketplace kami.</string>
-    <string name="home">Home</string>
     <string name="skip">Lewati</string>
     <string name="illustration_with_briefcase">illustration with briefcase</string>
     <string name="logo_travens">Logo Travens</string>
-
     <string name="lanjut">Lanjut</string>
     <string name="mulai">Mulai</string>
-    <string name="lets_sign_in">Login</string>
-    <string name="desc_login">Explore all the experience when you travel and book a ticket. Let\'s explore the world with me</string>
     <string name="password">Password</string>
-    <string name="edt_password_error_message">Password must be at least 6 characters</string>
     <string name="email">Email</string>
-    <string name="edt_email_error_message">Email address is not valid</string>
-    <string name="login">Login</string>
-    <string name="new_with_travens">New with travens?</string>
     <string name="register">Register</string>
-    <string name="let_s_create_an_account">Let\'s create an account</string>
-    <string name="desc_register">Let\'s create account so you can travel with friends using travels</string>
-    <string name="fullname">Fullname</string>
     <string name="err_invalid_email">Email tidak valid</string>
     <string name="sudah_mempunyai_akun">Sudah mempunyai akun?</string>
     <string name="masuk_dengan_email">Masuk dengan Email</string>
