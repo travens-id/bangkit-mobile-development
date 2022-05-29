@@ -5,13 +5,11 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
+import androidx.core.view.isVisible
 import com.bangkit.travens.MainActivity
-import com.bangkit.travens.R
 import com.bangkit.travens.databinding.ActivityLoginBinding
 import com.bangkit.travens.ui.signup.SignUpActivity
 import com.google.firebase.auth.FirebaseAuth
-import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.coroutines.ExperimentalCoroutinesApi
 
 
 class LoginActivity : AppCompatActivity() {
@@ -36,6 +34,7 @@ class LoginActivity : AppCompatActivity() {
 
 			if(email.isNotEmpty() && password.isNotEmpty()){
 				firebaseAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener {
+					binding.rlLayout.visibility = View.VISIBLE
 					if(it.isSuccessful){
 						val intent = Intent(this, MainActivity::class.java)
 						startActivity(intent)
@@ -53,10 +52,9 @@ class LoginActivity : AppCompatActivity() {
 		super.onStart()
 
 		if(firebaseAuth.currentUser != null){
-			val intent = Intent(this,MainActivity::class.java)
+			val intent = Intent(this, MainActivity::class.java)
 			startActivity(intent)
 			finish()
 		}
 	}
-
 }

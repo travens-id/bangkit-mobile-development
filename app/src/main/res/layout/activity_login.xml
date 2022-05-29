@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="8dp"
     tools:context=".ui.login.LoginActivity">
 
     <TextView
@@ -43,7 +42,7 @@
         style="@style/LoginTextInputOuterFieldStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="16dp"
+        android:layout_marginHorizontal="32dp"
         android:layout_marginTop="24dp"
         app:boxStrokeColor="@color/blue"
         app:hintTextColor="@color/blue"
@@ -58,7 +57,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/email"
-            android:inputType="textEmailAddress"/>
+            android:inputType="textEmailAddress" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -67,7 +66,7 @@
         style="@style/LoginTextInputOuterFieldStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="16dp"
+        android:layout_marginHorizontal="32dp"
         android:layout_marginTop="24dp"
         app:boxStrokeColor="@color/blue"
         app:endIconMode="password_toggle"
@@ -91,8 +90,8 @@
         android:id="@+id/btnLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
         android:layout_marginTop="24dp"
-        android:layout_marginHorizontal="20dp"
         android:background="@drawable/btn_background"
         android:text="@string/masuk"
         android:textAllCaps="false"
@@ -107,16 +106,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
+        android:gravity="center_horizontal"
         android:orientation="horizontal"
-        app:layout_constraintTop_toBottomOf="@+id/btnLogin"
-        android:gravity="center_horizontal">
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="4dp"
-            android:text="@string/sudah_mempunyai_akun"
-            android:fontFamily="@font/roboto_regular"/>
+            android:fontFamily="@font/roboto_regular"
+            android:text="@string/sudah_mempunyai_akun" />
 
         <TextView
             android:id="@+id/btnRegister"
@@ -124,9 +123,29 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="4dp"
             android:text="@string/buat_disini"
-            android:textColor="@color/blue"/>
+            android:textColor="@color/blue" />
 
     </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/transparent_blue"
+        android:visibility="invisible">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
