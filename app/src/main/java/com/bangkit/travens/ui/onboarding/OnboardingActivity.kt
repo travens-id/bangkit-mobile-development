@@ -44,6 +44,7 @@ class OnboardingActivity : AppCompatActivity(), View.OnClickListener {
 		when(p0.id){
 			R.id.btnGetStarted -> {
 				val moveIntent = Intent( this@OnboardingActivity, LoginActivity::class.java)
+				finish()
 				startActivity(moveIntent)
 			}
 		}

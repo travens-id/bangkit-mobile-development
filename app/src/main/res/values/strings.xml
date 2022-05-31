@@ -1,4 +1,4 @@
-<resources >
+<resources>
     <string name="app_name">Travens</string>
     <string name="person_with_a_handphone">Person with a handphone</string>
     <string name="desc_onboard_1">Buat sendiri rencana perjalananmu ke destinasi impian.</string>
@@ -28,4 +28,6 @@
     <string name="lastname">Lastname</string>
     <string name="no_telp">No Telp</string>
     <string name="daftar">Daftar</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
