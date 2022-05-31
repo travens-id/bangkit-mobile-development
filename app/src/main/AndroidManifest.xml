@@ -36,7 +36,6 @@
             android:name=".MainActivity"
             android:exported="true"
             tools:ignore="Instantiatable">
-
         </activity>
     </application>
 

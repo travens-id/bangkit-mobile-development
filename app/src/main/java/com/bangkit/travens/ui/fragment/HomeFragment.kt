@@ -1,4 +1,4 @@
-package com.bangkit.travens.ui.home
+package com.bangkit.travens.ui.fragment
 
 import androidx.compose.foundation.ScrollState
 import androidx.compose.foundation.background
