@@ -13,7 +13,8 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.sp
-import com.bangkit.travens.ui.home.HomeFragment
+import com.bangkit.travens.ui.fragment.HomeFragment
+import com.bangkit.travens.ui.fragment.ItineraryFragment
 
 @Composable
 fun HomeScreen() {
@@ -53,21 +54,7 @@ fun PlaygroundScreenPreview() {
 
 @Composable
 fun ItineraryScreen() {
-    Column(
-        modifier = Modifier
-            .fillMaxSize()
-            .background(Color.White)
-            .wrapContentSize(Alignment.Center)
-    ) {
-        Text(
-            text = "Itinerary View",
-            fontWeight = FontWeight.Bold,
-            color = Color.Black,
-            modifier = Modifier.align(Alignment.CenterHorizontally),
-            textAlign = TextAlign.Center,
-            fontSize = 25.sp
-        )
-    }
+    ItineraryFragment()
 }
 
 @Preview(showBackground = true)
