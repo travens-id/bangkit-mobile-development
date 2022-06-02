@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "87938517899",
+    "project_id": "travens-351215",
+    "storage_bucket": "travens-351215.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:87938517899:android:c23d7f3e0154fbf80ffd8e",
+        "android_client_info": {
+          "package_name": "com.bangkit.travens"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "87938517899-4lpvqmsntdh63hmer0glck4u92e956ik.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNv2b02ircSK6PML89v_W1Di25xiD1F-Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "87938517899-4lpvqmsntdh63hmer0glck4u92e956ik.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
