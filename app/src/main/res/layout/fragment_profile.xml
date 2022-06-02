@@ -19,7 +19,7 @@
         android:id="@+id/imageView"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginTop="55dp"
+        android:layout_marginTop="50dp"
         android:src="@drawable/profile"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -77,8 +77,7 @@
             android:layout_height="match_parent"
             android:orientation="horizontal"
             android:paddingHorizontal="22dp"
-            android:paddingVertical="16dp"
-            android:outlineSpotShadowColor="@color/transparent_blue">
+            android:paddingVertical="16dp" >
 
             <ImageView
                 android:layout_width="50dp"
@@ -89,7 +88,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Profile Saya"
+                android:text="@string/profile_saya"
                 android:textSize="20sp"
                 android:layout_gravity="center_vertical"
                 android:textAppearance="@style/ShapeAppearance.Material3.LargeComponent"/>
@@ -161,6 +160,39 @@
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/list_favorite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/shop"
+        android:layout_margin="17dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingHorizontal="22dp"
+            android:paddingVertical="16dp"
+            android:outlineSpotShadowColor="@color/transparent_blue">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/icon_sub_shop"
+                android:layout_marginEnd="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="List Favorit"
+                android:textSize="20sp"
+                android:layout_gravity="center_vertical"
+
+                android:textAppearance="@style/ShapeAppearance.Material3.LargeComponent"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
 
     <TextView
         android:id="@+id/textView4"

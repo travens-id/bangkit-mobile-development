@@ -21,10 +21,10 @@
             android:exported="false">
         </activity>
         <activity
-            android:name=".ui.onboarding.OnboardingActivity"
-            android:exported="false" />
+            android:name=".ui.DetailItineraryActivity"
+            android:exported="false"/>
         <activity
-            android:name=".ui.splashscreen.SplashScreenActivity"
+            android:name=".DetailProfileActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -33,9 +33,17 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".ui.onboarding.OnboardingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.splashscreen.SplashScreenActivity"
+            android:exported="false"/>
+
+        <activity
             android:name=".MainActivity"
-            android:exported="true"
+            android:exported="false"
             tools:ignore="Instantiatable">
+
         </activity>
     </application>
 
