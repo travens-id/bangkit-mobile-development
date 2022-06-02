@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.login.LoginActivity">
+    tools:context=".presentation.ui.login.LoginActivity">
 
     <TextView
         android:id="@+id/textView"
@@ -51,7 +51,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2">
 
-        <com.bangkit.travens.ui.custom_component.EmailEditText
+        <com.bangkit.travens.presentation.ui.custom_component.EmailEditText
             android:id="@+id/emailEt"
             style="@style/LoginTextInputInnerFieldStyle"
             android:layout_width="match_parent"
@@ -76,7 +76,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/emailLayout">
 
-        <com.bangkit.travens.ui.custom_component.PasswordEditText
+        <com.bangkit.travens.presentation.ui.custom_component.PasswordEditText
             android:id="@+id/passET"
             style="@style/LoginTextInputInnerFieldStyle"
             android:layout_width="match_parent"

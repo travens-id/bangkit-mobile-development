@@ -96,3 +96,7 @@ dependencies {
     //lottie
     implementation "com.airbnb.android:lottie:$lottieVersion"
 }
+
+kapt {
+    correctErrorTypes = true
+}
