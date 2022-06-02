@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.GridLayoutManager
 import com.bangkit.travens.databinding.ActivityDetailProfileBinding
-import com.bangkit.travens.ui.*
+import com.bangkit.travens.presentation.ui.*
 
 class DetailProfileActivity : AppCompatActivity(), CardClickListener {
 

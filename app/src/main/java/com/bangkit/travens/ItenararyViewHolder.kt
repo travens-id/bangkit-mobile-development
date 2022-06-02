@@ -2,7 +2,7 @@ package com.bangkit.travens
 
 import androidx.recyclerview.widget.RecyclerView
 import com.bangkit.travens.databinding.LayoutItemBinding
-import com.bangkit.travens.ui.Itenarary
+import com.bangkit.travens.presentation.ui.Itenarary
 
 class ItenararyViewHolder (
 
