@@ -30,4 +30,23 @@
     <string name="daftar">Daftar</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="profile_saya">Profile Saya</string>
+    <string name="title_place_holder">Sleman, Jogjakarta</string>
+    <string name="_4_hari_2_malam">4 hari 2 malam</string>
+    <string name="budget">Budget : Rp 4.000.000/orang</string>
+    <string name="rating">5/5</string>
+    <string name="ubah_profil">Ubah Profil</string>
+    <string name="itenarary_yang_sudah_terbit">Itenarary yang sudah terbit</string>
+    <string name="test_com">test.com</string>
+    <string name="dki_jakarta_indonesia">DKI Jakarta, Indonesia</string>
+    <string name="gender">Pria</string>
+    <string name="date">Anggota sejak 17 Mei 2022</string>
+    <string name="desc_account">A backpacker who loves to travelling around.</string>
+    <string name="itinerary">Itinerary</string>
+    <string name="sum_following">10</string>
+    <string name="followed">Diikuti</string>
+    <string name="sum_follower">100</string>
+    <string name="follower">Pengikut</string>
+    <string name="sum_itinerary">19</string>
+    <string name="name">Zeen Abigail</string>
 </resources>
