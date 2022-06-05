@@ -1,5 +1,6 @@
 package com.bangkit.travens.presentation.ui.fragment
 
+import android.content.Intent
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
@@ -12,6 +13,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
@@ -21,9 +23,11 @@ import androidx.compose.ui.unit.sp
 import com.bangkit.travens.R
 import com.bangkit.travens.presentation.ui.theme.Link
 import com.bangkit.travens.presentation.ui.theme.Primary60
+import com.bangkit.travens.presentation.ui.upload.UploadImageActivity
 
 @Composable
 fun PlaygroundFragment() {
+    val context = LocalContext.current
     Box(
         modifier = Modifier
             .fillMaxSize()
@@ -61,7 +65,9 @@ fun PlaygroundFragment() {
                 )
                 Spacer(modifier = Modifier.padding(16.dp))
                 Button(
-                    onClick = { /*TODO*/ },
+                    onClick = {
+                        context.startActivity(Intent(context, UploadImageActivity::class.java))
+                    },
                     colors = ButtonDefaults.buttonColors(Primary60)
                 ) {
                     Text(text = "GET STARTED", color = Color.White)
