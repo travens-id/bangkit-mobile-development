@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingVertical="2dp"
-    tools:context=".DetailProfileActivity">
+    android:scrollbars="vertical"
+    tools:context=".presentation.ui.detailprofile.DetailProfileActivity">
 
     <View
         android:id="@+id/view2"

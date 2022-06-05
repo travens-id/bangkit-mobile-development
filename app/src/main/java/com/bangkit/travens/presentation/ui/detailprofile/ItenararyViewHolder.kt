@@ -1,4 +1,4 @@
-package com.bangkit.travens
+package com.bangkit.travens.presentation.ui.detailprofile
 
 import androidx.recyclerview.widget.RecyclerView
 import com.bangkit.travens.databinding.LayoutItemBinding

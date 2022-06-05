@@ -1,4 +1,4 @@
-package com.bangkit.travens.presentation.ui
+package com.bangkit.travens.presentation.ui.detailItenarary
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

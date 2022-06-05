@@ -1,11 +1,14 @@
-package com.bangkit.travens
+package com.bangkit.travens.presentation.ui.detailprofile
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.GridLayoutManager
+import com.bangkit.travens.R
 import com.bangkit.travens.databinding.ActivityDetailProfileBinding
+import com.bangkit.travens.presentation.adapter.ItenararyAdapter
 import com.bangkit.travens.presentation.ui.*
+import com.bangkit.travens.presentation.ui.detailItenarary.DetailItineraryActivity
 
 class DetailProfileActivity : AppCompatActivity(), CardClickListener {
 
@@ -44,4 +47,5 @@ class DetailProfileActivity : AppCompatActivity(), CardClickListener {
 		intent.putExtra(ITENARARY_ID_EXTRA, itenarary.id)
 		startActivity(intent)
 	}
+
 }

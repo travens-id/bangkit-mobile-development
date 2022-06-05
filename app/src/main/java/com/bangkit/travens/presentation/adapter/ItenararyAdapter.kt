@@ -1,11 +1,12 @@
-package com.bangkit.travens.presentation.ui
+package com.bangkit.travens.presentation.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.bangkit.travens.CardClickListener
-import com.bangkit.travens.ItenararyViewHolder
+import com.bangkit.travens.presentation.ui.detailprofile.CardClickListener
+import com.bangkit.travens.presentation.ui.detailprofile.ItenararyViewHolder
 import com.bangkit.travens.databinding.LayoutItemBinding
+import com.bangkit.travens.presentation.ui.Itenarary
 
 class ItenararyAdapter(
 	private val itenarary: List<Itenarary>,

@@ -2,7 +2,7 @@ package com.bangkit.travens.presentation.ui
 
 var itenararyList = mutableListOf<Itenarary>()
 
-val ITENARARY_ID_EXTRA = "itenararyExtra"
+const val ITENARARY_ID_EXTRA = "itenararyExtra"
 
 class Itenarary (
 	var cover : Int,
