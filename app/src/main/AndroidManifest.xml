@@ -15,28 +15,20 @@
         tools:targetApi="31">
         <activity
             android:name=".presentation.ui.profile.ProfileActivity"
-            android:exported="false" >
-
-        </activity>
+            android:exported="false" />
         <activity
             android:name=".presentation.ui.FavouriteDetailActivity"
             android:exported="false"/>
         <activity
             android:name=".presentation.ui.favourite.FavouriteActivity"
-            android:exported="false">
+            android:exported="true">
         </activity>
         <activity
             android:name=".presentation.ui.signup.SignUpActivity"
             android:exported="false" />
         <activity
             android:name=".presentation.ui.login.LoginActivity"
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="false" />
         <activity
             android:name=".presentation.ui.detailItenarary.DetailItineraryActivity"
             android:exported="false"
@@ -49,8 +41,12 @@
             android:exported="false" />
         <activity
             android:name=".presentation.ui.splashscreen.SplashScreenActivity"
-            android:exported="false" >
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".presentation.MainActivity"

@@ -10,4 +10,6 @@
     <color name="blue">#2D8CFF</color>
     <color name="yellow">#FF8B00</color>
     <color name="transparent_blue">#4D797E83</color>
+    <color name="primary_60">#FF2675D4</color>
+    <color name="secondary">#FFFF8B00</color>
 </resources>
