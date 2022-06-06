@@ -7,6 +7,7 @@ import android.view.View
 import android.widget.Toast
 import com.bangkit.travens.presentation.MainActivity
 import com.bangkit.travens.databinding.ActivityLoginBinding
+import com.bangkit.travens.presentation.ui.profile.ProfileActivity
 import com.bangkit.travens.presentation.ui.signup.SignUpActivity
 import com.google.firebase.auth.FirebaseAuth
 
@@ -35,7 +36,7 @@ class LoginActivity : AppCompatActivity() {
 				firebaseAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener {
 					binding.rlLayout.visibility = View.VISIBLE
 					if(it.isSuccessful){
-						val intent = Intent(this, MainActivity::class.java)
+						val intent = Intent(this, ProfileActivity::class.java)
 						startActivity(intent)
 					} else {
 						Toast.makeText(this, it.exception.toString(), Toast.LENGTH_SHORT).show()
@@ -51,7 +52,7 @@ class LoginActivity : AppCompatActivity() {
 		super.onStart()
 
 		if(firebaseAuth.currentUser != null){
-			val intent = Intent(this, MainActivity::class.java)
+			val intent = Intent(this, ProfileActivity::class.java)
 			startActivity(intent)
 			finish()
 		}
