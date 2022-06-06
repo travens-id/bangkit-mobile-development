@@ -49,4 +49,8 @@
     <string name="follower">Pengikut</string>
     <string name="sum_itinerary">19</string>
     <string name="name">Zeen Abigail</string>
+    <string name="upload_image">UPLOAD IMAGE</string>
+    <string name="preview_for_image_to_upload">Preview for Image to Upload</string>
+    <string name="camera_button_icon">camera button icon</string>
+    <string name="gallery_button_icon">gallery button icon</string>
 </resources>
