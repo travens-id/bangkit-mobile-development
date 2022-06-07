@@ -23,7 +23,7 @@
         android:id="@+id/cameraBtn"
         android:layout_width="100dp"
         android:layout_height="50dp"
-        android:layout_marginStart="32dp"
+        android:layout_marginStart="40dp"
         android:layout_marginTop="32dp"
         android:src="@drawable/ic_camera"
         android:background="@drawable/rounded_corner"
@@ -37,7 +37,7 @@
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:layout_marginTop="32dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginEnd="40dp"
         android:src="@drawable/ic_gallery"
         android:background="@drawable/rounded_corner"
         android:backgroundTint="@color/secondary"
@@ -47,7 +47,7 @@
 
     <Button
         android:id="@+id/uploadBtn"
-        android:layout_width="240dp"
+        android:layout_width="224dp"
         android:layout_height="60dp"
         android:layout_marginTop="16dp"
         android:backgroundTint="@color/blue"
