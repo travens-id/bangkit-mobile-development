@@ -11,12 +11,17 @@ import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
+import java.util.concurrent.TimeUnit
 
 data class FileUploadResponse(
-    @field:SerializedName("error")
-    val error: Boolean,
-    @field:SerializedName("message")
-    val message: String
+//    @field:SerializedName("error")
+//    val error: String,
+//    @field:SerializedName("message")
+//    val message: String,
+    @field:SerializedName("image_url")
+    val image_url: String,
+    @field:SerializedName("label")
+    val label: String
 )
 
 interface ApiService {
@@ -24,7 +29,6 @@ interface ApiService {
     @POST("/predict")
     fun uploadImage(
         @Part file: MultipartBody.Part,
-        @Part("key") key: RequestBody,
     ): Call<FileUploadResponse>
 }
 
@@ -34,6 +38,9 @@ class ApiConfig {
             HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY)
         val client = OkHttpClient.Builder()
             .addInterceptor(loggingInterceptor)
+            .connectTimeout(30, TimeUnit.SECONDS)
+            .readTimeout(30, TimeUnit.SECONDS)
+            .writeTimeout(30, TimeUnit.SECONDS)
             .build()
         val retrofit = Retrofit.Builder()
             .baseUrl("https://travens-api.my.id/")
