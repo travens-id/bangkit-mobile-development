@@ -34,23 +34,23 @@ The source code of Android app of Travens using Kotlin in order to complete Bang
   - [Lottie Files](https://lottiefiles.com/) 
   - [Google Play services Maps](https://developers.google.com/maps/documentation/android-sdk/get-api-key) 
 
-## Getting Started Application
+### Getting Started Application
 
   - ### Prerequisites
       - ##### Tools Sofware
-        1. [Android Studio](https://developer.android.com/studio)
-        2. JRE (Java Runtime Environment) or JDK (Java Development Kit).
+        - [Android Studio](https://developer.android.com/studio)
+        - JRE (Java Runtime Environment) or JDK (Java Development Kit).
 
-  - ### Installation
-      1. Get an API Key at [Google Maps Platform](https://developers.google.com/maps/documentation/android-sdk/get-api-key)
-      2. Connect Android Studio with Firebase [Connect to Firebase](https://developer.android.com/studio/write/firebase)
-      3. Clone this repository and import into Android Studio    
-          ```
-             https://github.com/Widi-ps/bangkit-mobile-development.git
-          ``` 
-      4. Enter your API in buildConfigField `build.graddle`
-         ``` defaultConfig {
-            buildConfigField("String", "MAPS_TOKEN", '"Your Api Key"')}
+      - #### Installation
+        - Get an API Key at [Google Maps Platform](https://developers.google.com/maps/documentation/android-sdk/get-api-key)
+        - Connect Android Studio with Firebase [Connect to Firebase](https://developer.android.com/studio/write/firebase)
+        - Clone this repository and import into Android Studio    
+            ```
+               https://github.com/travens-id/bangkit-mobile-development.git
+            ``` 
+        - Enter your API in buildConfigField `build.graddle`
+           ``` defaultConfig {
+               buildConfigField("String", "MAPS_TOKEN", '"Your Api Key"')}
 
   ## Acknowledgements
   * [Clean Architecture Guide](https://developer.android.com/jetpack/guide)
