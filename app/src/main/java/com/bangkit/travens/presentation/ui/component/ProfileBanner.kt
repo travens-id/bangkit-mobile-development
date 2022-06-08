@@ -15,9 +15,9 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.bangkit.travens.presentation.ui.theme.Primary60
 import com.bangkit.travens.R
 import com.bangkit.travens.presentation.ui.theme.ExtraLight
+import com.bangkit.travens.presentation.ui.theme.Primary60
 
 
 @Composable
