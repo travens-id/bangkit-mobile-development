@@ -36,7 +36,7 @@ class LoginActivity : AppCompatActivity() {
 				firebaseAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener {
 					binding.rlLayout.visibility = View.VISIBLE
 					if(it.isSuccessful){
-						val intent = Intent(this, ProfileActivity::class.java)
+						val intent = Intent(this, MainActivity::class.java)
 						startActivity(intent)
 					} else {
 						Toast.makeText(this, it.exception.toString(), Toast.LENGTH_SHORT).show()
@@ -52,7 +52,7 @@ class LoginActivity : AppCompatActivity() {
 		super.onStart()
 
 		if(firebaseAuth.currentUser != null){
-			val intent = Intent(this, ProfileActivity::class.java)
+			val intent = Intent(this, MainActivity::class.java)
 			startActivity(intent)
 			finish()
 		}

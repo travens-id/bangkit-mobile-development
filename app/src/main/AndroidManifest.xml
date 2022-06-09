@@ -21,14 +21,13 @@
             android:exported="false"/>
         <activity
             android:name=".presentation.ui.favourite.FavouriteActivity"
-            android:exported="true">
-        </activity>
+            android:exported="false"/>
         <activity
             android:name=".presentation.ui.signup.SignUpActivity"
-            android:exported="false" />
+            android:exported="false"/>
         <activity
             android:name=".presentation.ui.login.LoginActivity"
-            android:exported="false" />
+            android:exported="false"/>
         <activity
             android:name=".presentation.ui.detailItenarary.DetailItineraryActivity"
             android:exported="false"

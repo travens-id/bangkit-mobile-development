@@ -6,11 +6,12 @@ import com.google.firebase.database.*
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.bangkit.travens.databinding.ActivityProfileBinding
+import com.bangkit.travens.presentation.ui.favourite.FavouriteActivity
 import com.google.firebase.auth.FirebaseAuth
 
 class ProfileActivity : AppCompatActivity() {
 
-	private lateinit var binding : ActivityProfileBinding
+	private lateinit var binding: ActivityProfileBinding
 	private lateinit var auth : FirebaseAuth
 	private var databaseReference: DatabaseReference? = null
 	private var database: FirebaseDatabase? = null
@@ -26,6 +27,12 @@ class ProfileActivity : AppCompatActivity() {
 		databaseReference = database?.reference?.child("profile")
 
 		loadProfile()
+
+		binding.listFavorite.setOnClickListener{
+			val intent = Intent(this@ProfileActivity, FavouriteActivity::class.java)
+			startActivity(intent)
+			finish()
+		}
 	}
 
 	private fun loadProfile() {
