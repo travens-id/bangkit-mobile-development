@@ -10,13 +10,13 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.bangkit.travens.presentation.ui.component.ProfileBanner
-import com.bangkit.travens.presentation.ui.component.TitleText
 import com.bangkit.travens.presentation.ui.carousel.BlogCarousel
 import com.bangkit.travens.presentation.ui.carousel.OnboardCarousel
-import com.bangkit.travens.presentation.ui.component.FeaturedCard
 import com.bangkit.travens.presentation.ui.carousel.RecommendedCarousel
+import com.bangkit.travens.presentation.ui.component.FeaturedCard
+import com.bangkit.travens.presentation.ui.component.ProfileBanner
 import com.bangkit.travens.presentation.ui.component.SearchBox
+import com.bangkit.travens.presentation.ui.component.TitleText
 
 @Composable
 fun HomeFragment() {

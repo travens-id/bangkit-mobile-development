@@ -53,4 +53,15 @@
     <string name="preview_for_image_to_upload">Preview for Image to Upload</string>
     <string name="camera_button_icon">camera button icon</string>
     <string name="gallery_button_icon">gallery button icon</string>
+    <string name="see_more">See More</string>
+    <string name="click_for_more">click for more</string>
+    <string name="see_detail">see detail</string>
+    <string name="the_object">The Object</string>
+    <string name="is">is</string>
+    <string name="description">Description</string>
+    <string name="the_object_is">The Object is</string>
+    <string name="placeholder_image">placeholder image</string>
+    <string name="location_icon">location icon</string>
+    <string name="phone_icon">phone icon</string>
+    <string name="clock_icon">clock icon</string>
 </resources>

@@ -1,13 +1,16 @@
 package com.bangkit.travens.presentation.ui.favourite
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
 import com.bangkit.travens.R
 import com.bangkit.travens.databinding.ActivityFavouriteBinding
 import com.bangkit.travens.presentation.adapter.FavouriteAdapter
-import com.bangkit.travens.presentation.ui.*
+import com.bangkit.travens.presentation.ui.FAV_ID_EXTRA
+import com.bangkit.travens.presentation.ui.Favourite
+import com.bangkit.travens.presentation.ui.FavouriteDetailActivity
+import com.bangkit.travens.presentation.ui.favList
 
 class FavouriteActivity : AppCompatActivity(), ListFavouriteListener {
 

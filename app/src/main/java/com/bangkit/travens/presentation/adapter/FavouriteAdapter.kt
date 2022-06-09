@@ -4,9 +4,9 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bangkit.travens.databinding.ListFavouriteBinding
-import com.bangkit.travens.presentation.ui.favourite.ListFavouriteListener
 import com.bangkit.travens.presentation.ui.Favourite
 import com.bangkit.travens.presentation.ui.favourite.FavouriteViewHolder
+import com.bangkit.travens.presentation.ui.favourite.ListFavouriteListener
 
 class FavouriteAdapter (
 	private val favourite: List<Favourite>,

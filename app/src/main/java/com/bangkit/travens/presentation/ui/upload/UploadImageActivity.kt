@@ -21,7 +21,7 @@ import okhttp3.RequestBody.Companion.asRequestBody
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
-import java.io.*
+import java.io.File
 
 
 class UploadImageActivity : AppCompatActivity() {
@@ -139,6 +139,8 @@ class UploadImageActivity : AppCompatActivity() {
 
             val service = ApiConfig().getApiService().uploadImage(imageMultipart)
 
+            Toast.makeText(this@UploadImageActivity, "Uploading Image", Toast.LENGTH_SHORT).show()
+
             service.enqueue(object : Callback<FileUploadResponse> {
                 override fun onResponse(
                     call: Call<FileUploadResponse>,
@@ -147,7 +149,11 @@ class UploadImageActivity : AppCompatActivity() {
                     if (response.isSuccessful) {
                         val responseBody = response.body()
                         if (responseBody != null) {
-                            Toast.makeText(this@UploadImageActivity, responseBody.label, Toast.LENGTH_SHORT).show()
+//                            Toast.makeText(this@UploadImageActivity, responseBody.label, Toast.LENGTH_SHORT).show()
+                            val moveWithDataIntent = Intent(this@UploadImageActivity, DetectionResultActivity::class.java)
+                            moveWithDataIntent.putExtra(DetectionResultActivity.EXTRA_DEST, responseBody.label)
+                            moveWithDataIntent.putExtra(DetectionResultActivity.EXTRA_IMG, responseBody.image_url)
+                            startActivity(moveWithDataIntent)
                         }
                     } else {
                         Toast.makeText(this@UploadImageActivity, response.message(), Toast.LENGTH_SHORT).show()
