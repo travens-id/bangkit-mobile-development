@@ -7,7 +7,6 @@ import android.view.View
 import android.widget.Toast
 import com.bangkit.travens.presentation.MainActivity
 import com.bangkit.travens.databinding.ActivityLoginBinding
-import com.bangkit.travens.presentation.ui.profile.ProfileActivity
 import com.bangkit.travens.presentation.ui.signup.SignUpActivity
 import com.google.firebase.auth.FirebaseAuth
 

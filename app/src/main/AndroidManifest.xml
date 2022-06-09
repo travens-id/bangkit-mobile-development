@@ -3,7 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.bangkit.travens">
 
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
 
     <application
         android:allowBackup="true"
@@ -14,33 +20,38 @@
         android:theme="@style/Theme.Travens"
         tools:targetApi="31">
         <activity
+            android:name=".presentation.ui.upload.UploadImageActivity"
+            android:exported="false" />
+        <activity
             android:name=".presentation.ui.profile.ProfileActivity"
             android:exported="false" />
         <activity
             android:name=".presentation.ui.FavouriteDetailActivity"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".presentation.ui.favourite.FavouriteActivity"
-            android:exported="false"/>
+            android:exported="true">
+
+        </activity>
         <activity
             android:name=".presentation.ui.signup.SignUpActivity"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".presentation.ui.login.LoginActivity"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".presentation.ui.detailItenarary.DetailItineraryActivity"
             android:exported="false"
             android:parentActivityName=".presentation.ui.detailprofile.DetailProfileActivity" />
         <activity
             android:name=".presentation.ui.detailprofile.DetailProfileActivity"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".presentation.ui.onboarding.OnboardingActivity"
             android:exported="false" />
         <activity
             android:name=".presentation.ui.splashscreen.SplashScreenActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -49,8 +60,29 @@
         </activity>
         <activity
             android:name=".presentation.MainActivity"
+            android:exported="true"
+            tools:ignore="Instantiatable">
+
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.dicoding.picodiploma.mycamera"
             android:exported="false"
-            tools:ignore="Instantiatable" />
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"/>
+        </provider>
+
     </application>
+
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <category android:name="android.intent.category.BROWSABLE" />
+            <data android:scheme="https" />
+        </intent>
+    </queries>
 
 </manifest>

@@ -1,7 +1,7 @@
 package com.bangkit.travens.presentation.ui.detailItenarary
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.bangkit.travens.R
 
 class DetailItineraryActivity : AppCompatActivity() {

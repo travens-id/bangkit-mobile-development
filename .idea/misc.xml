@@ -42,18 +42,25 @@
         <entry key="..\:/Bangkit_2022/Capstone/bangkit-mobile-development/app/src/main/res/layout/activity_login.xml" value="0.16666666666666666" />
         <entry key="..\:/Bangkit_2022/Capstone/bangkit-mobile-development/app/src/main/res/layout/activity_main.xml" value="0.17552083333333332" />
         <entry key="..\:/Bangkit_2022/Capstone/bangkit-mobile-development/app/src/main/res/layout/activity_onboarding.xml" value="0.16666666666666666" />
-        <entry key="..\:/Bangkit_2022/Capstone/bangkit-mobile-development/app/src/main/res/layout/activity_profile.xml" value="0.17552083333333332" />
         <entry key="..\:/Bangkit_2022/Capstone/bangkit-mobile-development/app/src/main/res/layout/activity_sign_up.xml" value="0.16666666666666666" />
         <entry key="..\:/Bangkit_2022/Capstone/bangkit-mobile-development/app/src/main/res/layout/activity_splash_screen.xml" value="0.17552083333333332" />
-        <entry key="..\:/Bangkit_2022/Capstone/bangkit-mobile-development/app/src/main/res/layout/activity_upload_image.xml" value="0.17552083333333332" />
         <entry key="..\:/Bangkit_2022/Capstone/bangkit-mobile-development/app/src/main/res/layout/fragment_login.xml" value="0.17552083333333332" />
-        <entry key="..\:/Bangkit_2022/Capstone/bangkit-mobile-development/app/src/main/res/layout/fragment_profile.xml" value="0.22" />
+        <entry key="..\:/Bangkit_2022/Capstone/bangkit-mobile-development/app/src/main/res/layout/fragment_profile.xml" value="0.1" />
         <entry key="..\:/Bangkit_2022/Capstone/bangkit-mobile-development/app/src/main/res/layout/fragment_register.xml" value="0.17552083333333332" />
         <entry key="..\:/Bangkit_2022/Capstone/bangkit-mobile-development/app/src/main/res/layout/layout_item.xml" value="0.360427807486631" />
         <entry key="..\:/Bangkit_2022/Capstone/bangkit-mobile-development/app/src/main/res/layout/layout_progress.xml" value="0.1" />
         <entry key="..\:/Bangkit_2022/Capstone/bangkit-mobile-development/app/src/main/res/layout/list_favourite.xml" value="0.22" />
-        <entry key="..\:/Bangkit_2022/Capstone/bangkit-mobile-development/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.184" />
-        <entry key="..\:/Bangkit_2022/Capstone/bangkit-mobile-development/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.184" />
+        <entry key="..\:/Users/Public/AndroidStudioProjects/Travens/app/src/main/res/drawable/rounded_corner.xml" value="0.1115" />
+        <entry key="..\:/Users/Public/AndroidStudioProjects/Travens/app/src/main/res/layout/activity_favourite.xml" value="0.13020833333333334" />
+        <entry key="..\:/Users/Public/AndroidStudioProjects/Travens/app/src/main/res/layout/activity_favourite_detail.xml" value="0.13020833333333334" />
+        <entry key="..\:/Users/Public/AndroidStudioProjects/Travens/app/src/main/res/layout/activity_upload_image.xml" value="0.19157608695652173" />
+        <entry key="..\:/Users/Public/AndroidStudioProjects/Travens/app/src/main/res/layout/compose_profile.xml" value="0.10885416666666667" />
+        <entry key="..\:/Users/Public/AndroidStudioProjects/Travens/app/src/main/res/layout/fragment_blank.xml" value="0.13020833333333334" />
+        <entry key="..\:/Users/Public/AndroidStudioProjects/Travens/app/src/main/res/layout/fragment_compose_container.xml" value="0.13020833333333334" />
+        <entry key="..\:/Users/Public/AndroidStudioProjects/Travens/app/src/main/res/layout/fragment_profile.xml" value="0.13020833333333334" />
+        <entry key="..\:/Users/Public/AndroidStudioProjects/Travens/app/src/main/res/layout/layout_item.xml" value="0.13020833333333334" />
+        <entry key="..\:/Users/Public/AndroidStudioProjects/Travens/app/src/main/res/layout/list_favourite.xml" value="0.13020833333333334" />
+        <entry key="..\:/Users/Public/AndroidStudioProjects/Travens/app/src/main/res/xml/file_paths.xml" value="0.13020833333333334" />
       </map>
     </option>
   </component>

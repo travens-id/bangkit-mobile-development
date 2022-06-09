@@ -1,10 +1,10 @@
 package com.bangkit.travens.presentation.ui.signup
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.bangkit.travens.databinding.ActivitySignUpBinding
 import com.bangkit.travens.presentation.ui.login.LoginActivity
 import com.google.firebase.auth.FirebaseAuth
