@@ -4,39 +4,21 @@
     package="com.bangkit.travens">
 
     <uses-feature android:name="android.hardware.camera" />
-
     <uses-permission android:name="android.permission.CAMERA" />
+
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission
-        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
         android:maxSdkVersion="18" />
-
-    <queries>
-        <intent>
-            <action android:name="android.intent.action.VIEW" />
-
-            <category android:name="android.intent.category.BROWSABLE" />
-
-            <data android:scheme="https" />
-        </intent>
-    </queries>
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:networkSecurityConfig="@xml/network_security_config"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Travens"
         tools:targetApi="31">
-        <activity
-            android:name=".presentation.ui.upload.DestinationDetailActivity"
-            android:exported="false" />
-        <activity
-            android:name=".presentation.ui.upload.DetectionResultActivity"
-            android:exported="false" />
         <activity
             android:name=".presentation.ui.upload.UploadImageActivity"
             android:exported="false" />
@@ -48,7 +30,9 @@
             android:exported="false" />
         <activity
             android:name=".presentation.ui.favourite.FavouriteActivity"
-            android:exported="false" />
+            android:exported="true">
+
+        </activity>
         <activity
             android:name=".presentation.ui.signup.SignUpActivity"
             android:exported="false" />
@@ -77,17 +61,28 @@
         <activity
             android:name=".presentation.MainActivity"
             android:exported="true"
-            tools:ignore="Instantiatable" />
+            tools:ignore="Instantiatable">
+
+        </activity>
 
         <provider
             android:name="androidx.core.content.FileProvider"
-            android:authorities="com.bangkit.travens"
+            android:authorities="com.dicoding.picodiploma.mycamera"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/file_paths" />
+                android:resource="@xml/file_paths"/>
         </provider>
+
     </application>
+
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <category android:name="android.intent.category.BROWSABLE" />
+            <data android:scheme="https" />
+        </intent>
+    </queries>
 
 </manifest>

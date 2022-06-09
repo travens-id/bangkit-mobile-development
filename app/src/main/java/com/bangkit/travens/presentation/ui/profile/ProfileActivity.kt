@@ -1,12 +1,12 @@
 package com.bangkit.travens.presentation.ui.profile
 
 import android.content.Intent
-import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
-import com.bangkit.travens.databinding.ActivityProfileBinding
 import com.bangkit.travens.presentation.ui.login.LoginActivity
-import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import com.bangkit.travens.databinding.ActivityProfileBinding
+import com.google.firebase.auth.FirebaseAuth
 
 class ProfileActivity : AppCompatActivity() {
 
