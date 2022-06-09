@@ -3,7 +3,7 @@
 The source code of Android app of Travens using Kotlin in order to complete Bangkit Capstone Project.
 
  - ### Architecture for this project  
-![topologi android](https://user-images.githubusercontent.com/69189062/172676880-dc62cf1c-b8ca-409f-8a1a-3e801603ecb4.png)
+![Android Travens drawio (1)](https://user-images.githubusercontent.com/86970816/172754208-3af01b8f-d7c8-44e6-b00d-8864c8f4b693.png)
 
  - ### Feature
       * **Splash Screen**, There is logo screen before into the login page
