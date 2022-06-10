@@ -22,7 +22,10 @@ fun RestaurantCarousel() {
     ) {
         for (item in RestaurantCardModelList.indices) {
             val newCard = RestaurantCardModelList[item]
-            RecommendedCard(painter = newCard.restaurantImage, title = newCard.restaurantTitle)
+            RecommendedCard(
+                painter = newCard.restaurantImage,
+                title = newCard.restaurantTitle
+            )
         }
     }
 }

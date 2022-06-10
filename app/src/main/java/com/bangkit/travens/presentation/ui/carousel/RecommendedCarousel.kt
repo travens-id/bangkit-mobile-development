@@ -22,7 +22,10 @@ fun RecommendedCarousel() {
     ) {
         for (item in RecommendedCardModelList.indices) {
             val newCard = RecommendedCardModelList[item]
-            RecommendedCard(painter = newCard.recommendedImage, title = newCard.recommendedTitle)
+            RecommendedCard(
+                painter = newCard.recommendedImage,
+                title = newCard.recommendedTitle
+            )
         }
     }
 }
