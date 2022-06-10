@@ -20,7 +20,10 @@ fun OnboardCarousel() {
     ) {
         HorizontalPager(count = OnboardCardModelList.size) { page ->
             val newCard = OnboardCardModelList[page]
-            OnboardCard(painter = newCard.onboardImage, title = newCard.onboardTitle)
+            OnboardCard(
+                painter = newCard.onboardImage,
+                title = newCard.onboardTitle
+            )
         }
     }
 }

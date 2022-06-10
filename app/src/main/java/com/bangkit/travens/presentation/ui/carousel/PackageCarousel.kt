@@ -17,7 +17,8 @@ fun PackageCarousel(
 ) {
     val list = PackageCardModelList
     Row(
-        modifier = Modifier.padding(start = 16.dp, top = 0.dp, end = 16.dp, bottom = 8.dp),
+        modifier = Modifier
+            .padding(start = 16.dp, top = 0.dp, end = 16.dp, bottom = 8.dp),
         horizontalArrangement = Arrangement.spacedBy(8.dp)
     ) {
         for (item in from..to) {
@@ -30,9 +31,6 @@ fun PackageCarousel(
             )
         }
     }
-
-
-
 }
 
 @Preview(showBackground = true)
