@@ -6,10 +6,17 @@ import androidx.appcompat.app.AppCompatActivity
 import com.bangkit.travens.R
 import com.bangkit.travens.databinding.ActivityDestinationDetailBinding
 import com.bumptech.glide.Glide
+import com.google.android.gms.maps.CameraUpdateFactory
+import com.google.android.gms.maps.GoogleMap
+import com.google.android.gms.maps.OnMapReadyCallback
+import com.google.android.gms.maps.SupportMapFragment
+import com.google.android.gms.maps.model.LatLng
+import com.google.android.gms.maps.model.MarkerOptions
 
-class DestinationDetailActivity : AppCompatActivity() {
+class DestinationDetailActivity : AppCompatActivity(), OnMapReadyCallback {
 
     private lateinit var binding: ActivityDestinationDetailBinding
+    private lateinit var mMap: GoogleMap
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,6 +34,10 @@ class DestinationDetailActivity : AppCompatActivity() {
 
         val imageView = findViewById<ImageView>(R.id.detailImg)
 
+        val mapFragment = supportFragmentManager
+            .findFragmentById(R.id.map) as SupportMapFragment
+        mapFragment.getMapAsync(this)
+
         binding.detailName.text = name
         binding.locatianDetail.text = address
         binding.phoneDetail.text = phone
@@ -38,6 +49,22 @@ class DestinationDetailActivity : AppCompatActivity() {
         Glide.with(this)
             .load(objectImage)
             .into(imageView)
+    }
+
+    override fun onMapReady(googleMap: GoogleMap) {
+        mMap = googleMap
+        mMap.uiSettings.isZoomControlsEnabled = true
+        mMap.uiSettings.isIndoorLevelPickerEnabled = true
+        mMap.uiSettings.isCompassEnabled = true
+        mMap.uiSettings.isMapToolbarEnabled = true
+
+        val latitude: Double = intent.getStringExtra(EXTRA_LATITUDE).toString().toDouble()
+        val longitude: Double = intent.getStringExtra(EXTRA_LONGITUDE).toString().toDouble()
+
+        val sydney = LatLng(latitude, longitude)
+        mMap.addMarker(MarkerOptions().position(sydney).title("Marker in Sydney"))
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney))
+        mMap.moveCamera(CameraUpdateFactory.zoomTo(15f))
     }
 
     companion object {
