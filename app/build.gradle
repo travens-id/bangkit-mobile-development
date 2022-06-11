@@ -111,6 +111,9 @@ dependencies {
     annotationProcessor 'com.github.bumptech.glide:compiler:4.13.2'
 
     implementation("androidx.cardview:cardview:1.0.0")
+
+    //Google Play Services
+    implementation 'com.google.android.gms:play-services-maps:18.0.2'
 }
 
 kapt {
