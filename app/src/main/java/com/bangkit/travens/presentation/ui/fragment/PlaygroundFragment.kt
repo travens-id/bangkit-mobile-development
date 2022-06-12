@@ -50,7 +50,7 @@ fun PlaygroundFragment() {
             ) {
                 Spacer(modifier = Modifier.padding(16.dp))
                 Text(
-                    text = "LANDMARK DETECTION",
+                    text = "DETEKSI LANDMARK",
                     fontWeight = FontWeight.Bold,
                     textAlign = TextAlign.Center,
                     fontSize = 18.sp
@@ -58,7 +58,7 @@ fun PlaygroundFragment() {
                 Spacer(modifier = Modifier.padding(16.dp))
                 Text(
                     modifier = Modifier.padding(horizontal = 48.dp),
-                    text = "Pick a picture from your gallery or take a photo directly from camera, get the detail and several information about that landmark",
+                    text = "Ambil gambar melalui kamera atau galeri, unggah dan dapatkan hasil mengenai objek yang tertera pada gambar",
                     textAlign = TextAlign.Center,
                     fontSize = 14.sp,
                     color = Link
@@ -70,7 +70,7 @@ fun PlaygroundFragment() {
                     },
                     colors = ButtonDefaults.buttonColors(Primary60)
                 ) {
-                    Text(text = "GET STARTED", color = Color.White)
+                    Text(text = "MULAI", color = Color.White)
 
                 }
                 Spacer(modifier = Modifier.padding(64.dp))
