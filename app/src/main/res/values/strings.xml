@@ -64,4 +64,10 @@
     <string name="location_icon">location icon</string>
     <string name="phone_icon">phone icon</string>
     <string name="clock_icon">clock icon</string>
+    <string name="take_a_picture_or_pick_file_from_gallery">Take a picture or pick file from gallery</string>
+    <string name="ambil_gambar_melalui_kamera_atau_galeri">Ambil gambar melalui kamera atau galeri</string>
+    <string name="unggah">Unggah</string>
+    <string name="deskripsi">Deskripsi</string>
+    <string name="objek_terdeteksi_adalah">Objek terdeteksi adalah</string>
+    <string name="lihat_detail">Lihat detail</string>
 </resources>

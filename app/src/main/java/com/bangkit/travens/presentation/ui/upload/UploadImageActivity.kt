@@ -8,6 +8,7 @@ import android.graphics.BitmapFactory
 import android.net.Uri
 import android.os.Bundle
 import android.provider.MediaStore
+import android.view.View
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
@@ -95,6 +96,8 @@ class UploadImageActivity : AppCompatActivity() {
             getFile = myFile
 
             binding.uploadImg.setImageURI(selectedImg)
+            binding.placeholderImg.visibility = View.GONE
+            binding.uploadImg.visibility = View.VISIBLE
         }
     }
 
@@ -123,6 +126,8 @@ class UploadImageActivity : AppCompatActivity() {
 
             val result = BitmapFactory.decodeFile(getFile?.path)
             binding.uploadImg.setImageBitmap(result)
+            binding.placeholderImg.visibility = View.GONE
+            binding.uploadImg.visibility = View.VISIBLE
         }
     }
 

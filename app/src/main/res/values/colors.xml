@@ -12,4 +12,6 @@
     <color name="transparent_blue">#4D797E83</color>
     <color name="primary_60">#FF2675D4</color>
     <color name="secondary">#FFFF8B00</color>
+    <color name="grey">#FAFAFA</color>
+    <color name="link">#FF657786</color>
 </resources>

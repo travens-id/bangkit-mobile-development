@@ -6,54 +6,114 @@
     android:layout_height="match_parent"
     tools:context=".presentation.ui.upload.UploadImageActivity">
 
-    <ImageView
-        android:id="@+id/uploadImg"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:src="@drawable/ic_placeholder"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="24dp"
+        android:background="@drawable/dashed_line"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.2"
-        android:contentDescription="@string/preview_for_image_to_upload"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
 
-    <ImageButton
-        android:id="@+id/cameraBtn"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="32dp"
-        android:src="@drawable/ic_camera"
-        android:background="@drawable/rounded_corner"
-        android:backgroundTint="@color/secondary"
-        app:layout_constraintStart_toStartOf="@+id/uploadImg"
-        app:layout_constraintTop_toBottomOf="@+id/uploadImg"
-        android:contentDescription="@string/camera_button_icon"/>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:background="@drawable/dashed_line"
+            android:backgroundTint="@color/grey"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
 
-    <ImageButton
-        android:id="@+id/galleryBtn"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="40dp"
-        android:src="@drawable/ic_gallery"
-        android:background="@drawable/rounded_corner"
-        android:backgroundTint="@color/secondary"
-        app:layout_constraintEnd_toEndOf="@+id/uploadImg"
-        app:layout_constraintTop_toBottomOf="@+id/uploadImg"
-        android:contentDescription="@string/gallery_button_icon"/>
+            <ImageView
+                android:id="@+id/placeholderImg"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_upload_cloud"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.35"
+                android:contentDescription="@string/preview_for_image_to_upload"
+                app:tint="@color/link" />
 
-    <Button
-        android:id="@+id/uploadBtn"
-        android:layout_width="224dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="16dp"
-        android:backgroundTint="@color/blue"
-        android:text="@string/upload_image"
-        app:layout_constraintEnd_toEndOf="@+id/galleryBtn"
-        app:layout_constraintStart_toStartOf="@+id/cameraBtn"
-        app:layout_constraintTop_toBottomOf="@+id/cameraBtn" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="@string/ambil_gambar_melalui_kamera_atau_galeri"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/placeholderImg" />
+
+            <ImageView
+                android:id="@+id/uploadImg"
+                android:layout_width="match_parent"
+                android:layout_height="550dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="16dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:contentDescription="@string/preview_for_image_to_upload"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_upload_cloud"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toTopOf="@+id/cameraBtn"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/cameraBtn"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/rounded_corner"
+                android:backgroundTint="@color/secondary"
+                android:contentDescription="@string/camera_button_icon"
+                android:src="@drawable/ic_camera"
+                app:layout_constraintBottom_toTopOf="@+id/uploadBtn"
+                app:layout_constraintStart_toStartOf="@+id/uploadBtn"
+                app:tint="@color/white" />
+
+            <ImageButton
+                android:id="@+id/galleryBtn"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/rounded_corner"
+                android:backgroundTint="@color/secondary"
+                android:contentDescription="@string/gallery_button_icon"
+                android:src="@drawable/ic_gallery"
+                app:layout_constraintBottom_toTopOf="@+id/uploadBtn"
+                app:layout_constraintEnd_toEndOf="@+id/uploadBtn"
+                app:tint="@color/white" />
+
+            <Button
+                android:id="@+id/uploadBtn"
+                android:layout_width="208dp"
+                android:layout_height="48dp"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="@color/primary_60"
+                android:text="@string/unggah"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

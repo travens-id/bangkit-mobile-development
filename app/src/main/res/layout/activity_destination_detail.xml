@@ -188,7 +188,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:paddingBottom="8dp"
-                    android:text="@string/description"
+                    android:text="@string/deskripsi"
                     android:textAlignment="center"
                     android:textAllCaps="true"
                     android:textSize="14sp"
